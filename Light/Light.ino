@@ -2,7 +2,7 @@
 #include <ESP8266WebServer.h>
 #define LED_PIN D0
 const char* ssid = "*******";
-const char* password = "********";
+const char* password ="*******";
 
 ESP8266WebServer server(80);
 String LightStatus = "0";
@@ -51,6 +51,7 @@ void setup() {
       BlinkLight();
     }
   }
+  digitalWrite(LED_BUILTIN, HIGH);
   Serial.println("Connected to WiFi");
   server.on("/LightChange", ChangeLight);
   server.on("/GetValue", GetValue);

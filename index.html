@@ -10,7 +10,6 @@
     <link rel="manifest" href="manifest.json">
     <link rel="icon" href="Assets/192x192.png" type="image/x-icon" sizes="any">
     <link rel="icon" type="image/png" href="Assets/192x192.png">
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 
     <style>
         body,
@@ -131,9 +130,9 @@
                     }
                 },
                 error: function () {
-                    alert("Wrong IP");
-                    console.log("http://" + IP + "/GetValue")
-                    setCookie()
+                    // alert("Wrong IP");
+                    // console.log("http://" + IP + "/GetValue")
+                    // setCookie()
                 },
                 complete: function () {
                     isRequestInProgress = false;
