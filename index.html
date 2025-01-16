@@ -108,7 +108,7 @@
     </label>
     <!-- <button  id="BLINK" onclick="Blink()">BLINK</button> -->
     <script>
-        let IP = "";
+        let IP = "192.168.237.222";
         const Check = document.getElementById("checkbox")
         //   const BLINK=document.getElementById("BLINK")
         let isRequestInProgress = false;
@@ -129,9 +129,8 @@
                     }
                 },
                 error: function () {
-                    alert("Wrong IP");
                     console.log("http://" + IP + "/GetValue")
-                    setCookie()
+                    // setCookie()
                 },
                 complete: function () {
                     isRequestInProgress = false;
@@ -197,7 +196,7 @@
 
         }
 
-        checkCookie()
+        // checkCookie()
 
     </script>
 </body>
