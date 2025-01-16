@@ -119,7 +119,7 @@
             isRequestInProgress = true;
 
             $.ajax({
-                url: "http://" + IP + "/GetValue",
+                url: "https://" + IP + "/GetValue",
                 method: 'GET',
                 success: function (data) {
                     if (data == 1) {
@@ -129,7 +129,7 @@
                     }
                 },
                 error: function () {
-                    console.log("http://" + IP + "/GetValue")
+                    console.log("https://" + IP + "/GetValue")
                     // setCookie()
                 },
                 complete: function () {
